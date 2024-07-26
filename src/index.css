@@ -1,0 +1,144 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+    background: rgb(237, 225, 235);
+    background: linear-gradient(90deg, rgba(237, 225, 235, 1) 0%, rgba(215, 231, 251, 1) 27%, rgba(248, 236, 246, 1) 56%, rgba(225, 238, 255, 1) 77%, rgba(243, 230, 241, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Centered text */
+.center {
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading */
+.heading {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+/* Input field */
+.input {
+    width: 80%;
+    max-width: 800px;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+    margin: 1rem 0;
+}
+
+.input:focus {
+    border-color: #007bff;
+}
+
+/* Card container */
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Pokemon card */
+.pokemon-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+/* Background for figure */
+.background {
+    background-image: url("../src/assets/graph.png");
+    background-size: 330px;
+    background-position: center;
+    object-fit: cover ;
+}
+
+/* Pokemon image */
+.pokemon-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+/* Pokemon name */
+.pokemon-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Pokemon info */
+.pokemon-info {
+    margin: 0.2rem 0;
+    color: #666;
+}
+
+.pokemon-info span {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Grid layout for details */
+.grid-three-cols {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+/* Highlight section */
+.pokemon-highlight > p {
+    background-color: #01ba23;
+    color: white;
+    border-radius: 5px;
+    padding: 0.2rem 0 .4rem 0 ;
+    width: 50%;
+    margin: .5rem auto;
+}
+
+

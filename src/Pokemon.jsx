@@ -66,7 +66,7 @@ function Pokemon() {
           type="text"
           name="search"
           className="input"
-          placeholder="Search Pokemon"
+          placeholder="Search Pokemon Here.."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />

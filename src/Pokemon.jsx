@@ -45,8 +45,8 @@ function Pokemon() {
   // check Error or Loading
   if (loading)
     return (
-      <div>
-        <h1 style={{ textAlign: "center" }}>Loading....</h1>
+      <div className="loader-container">
+        <div className="loader"></div>
       </div>
     );
 
